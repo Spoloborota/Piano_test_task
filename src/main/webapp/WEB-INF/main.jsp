@@ -1,6 +1,6 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
-<%@ page import="com.spoloborota.piano.Constants" %>
+<%@ page import="com.spoloborota.piano.common.Constants" %>
 
 <html>
 <head>
@@ -50,8 +50,8 @@
 			<tr class="${backstyle}">
 				<td><c:out value="${item.title}" /></td>
 				<td><c:out value="${item.creationDate}" /></td>
-				<td><c:out value="${item.author}" /></td>
-				<td><a href = "<c:url value = "${item.originalLink}"/>">link</a>
+				<td><c:out value="${item.ownerDisplaName}" /></td>
+				<td><a href = "<c:url value = "${item.link}"/>">link</a>
 			</tr>
 
 		</c:forEach>

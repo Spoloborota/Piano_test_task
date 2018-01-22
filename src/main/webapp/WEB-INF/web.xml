@@ -6,7 +6,7 @@
 		version="3.1">
   <servlet>
 		<servlet-name>QueryServlet</servlet-name>
-		<servlet-class>com.spoloborota.piano.QueryServlet</servlet-class>
+		<servlet-class>com.spoloborota.piano.http.QueryServlet</servlet-class>
 	</servlet>
 	
 	<servlet-mapping>
